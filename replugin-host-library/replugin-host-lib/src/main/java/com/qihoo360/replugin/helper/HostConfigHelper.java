@@ -59,10 +59,10 @@ public class HostConfigHelper {
     public static int ACTIVITY_PIT_COUNT_TASK = 2;
 
     // 是否使用 AppCompat 库
-    public static boolean ACTIVITY_PIT_USE_APPCOMPAT = false;
+    public static boolean ACTIVITY_PIT_USE_APPCOMPAT = true;
 
     //host 是否支持了androidx库
-    public static boolean HOST_USE_ANDROIDX = false;
+    public static boolean HOST_USE_ANDROIDX = true;
 
     //------------------------------------------------------------
     // 主程序支持的插件版本范围
