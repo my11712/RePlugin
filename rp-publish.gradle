@@ -94,7 +94,7 @@ println(
 
 if (isAndroid()) { // Android libraries
     task sourcesJar(overwrite: true, type: Jar) {
-        classifier = 'sources'
+        archiveClassifier = 'sources'
         from android.sourceSets.main.java.srcDirs
     }
     task javadoc(overwrite: true, type: Javadoc) {
@@ -103,13 +103,13 @@ if (isAndroid()) { // Android libraries
     }
 } else { // Java libraries
     task sourcesJar(overwrite: true, type: Jar, dependsOn: classes) {
-        classifier = 'sources'
+        archiveClassifier = 'sources'
         from sourceSets.main.allSource
     }
 }
 
 task javadocJar(overwrite: true, type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
+    archiveClassifier = 'javadoc'
     from javadoc.destinationDir
 }
 
