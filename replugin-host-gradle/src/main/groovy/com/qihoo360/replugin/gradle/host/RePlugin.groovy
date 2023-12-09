@@ -290,5 +290,5 @@ class RepluginConfig {
     def enablePluginFileIllegalStopBuild = true
 
     /** 宿主是否支持了 Androidx 库 */
-    def useAndroidX = false
+    def useAndroidX = true
 }

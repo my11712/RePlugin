@@ -21,6 +21,8 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
 repositories {
+    maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
     jcenter()
     mavenCentral()
     google()
@@ -28,6 +30,8 @@ repositories {
 
 buildscript {
     repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
         jcenter()
         mavenCentral()
         google()
